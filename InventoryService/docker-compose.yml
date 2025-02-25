@@ -1,0 +1,6 @@
+﻿services:
+  inventoryservice:
+    image: inventoryservice
+    build:
+      context: .
+      dockerfile: InventoryService/Dockerfile

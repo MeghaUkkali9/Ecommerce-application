@@ -1,0 +1,8 @@
+To run mysql in container:
+    docker exec -it customerservice-mysql-1 mysql -u<user> -p<password>
+    
+To see logs of application that is running on docker container.
+    docker logs <image_name>
+    
+ http://localhost:8080/swagger/index.html
+

@@ -1,0 +1,13 @@
+/Users/meghaukkali/RiderProjects/Ecommerce System/MongoDbSharedLibrary/MongoDbSharedLibrary/obj/Debug/net8.0/MongoDbSharedLibrary.csproj.AssemblyReference.cache
+/Users/meghaukkali/RiderProjects/Ecommerce System/MongoDbSharedLibrary/MongoDbSharedLibrary/obj/Debug/net8.0/MongoDbSharedLibrary.GeneratedMSBuildEditorConfig.editorconfig
+/Users/meghaukkali/RiderProjects/Ecommerce System/MongoDbSharedLibrary/MongoDbSharedLibrary/obj/Debug/net8.0/MongoDbSharedLibrary.AssemblyInfoInputs.cache
+/Users/meghaukkali/RiderProjects/Ecommerce System/MongoDbSharedLibrary/MongoDbSharedLibrary/obj/Debug/net8.0/MongoDbSharedLibrary.AssemblyInfo.cs
+/Users/meghaukkali/RiderProjects/Ecommerce System/MongoDbSharedLibrary/MongoDbSharedLibrary/obj/Debug/net8.0/MongoDbSharedLibrary.csproj.CoreCompileInputs.cache
+/Users/meghaukkali/RiderProjects/Ecommerce System/MongoDbSharedLibrary/MongoDbSharedLibrary/obj/Debug/net8.0/MongoDbSharedLibrary.sourcelink.json
+/Users/meghaukkali/RiderProjects/Ecommerce System/MongoDbSharedLibrary/MongoDbSharedLibrary/bin/Debug/net8.0/MongoDbSharedLibrary.deps.json
+/Users/meghaukkali/RiderProjects/Ecommerce System/MongoDbSharedLibrary/MongoDbSharedLibrary/bin/Debug/net8.0/MongoDbSharedLibrary.dll
+/Users/meghaukkali/RiderProjects/Ecommerce System/MongoDbSharedLibrary/MongoDbSharedLibrary/bin/Debug/net8.0/MongoDbSharedLibrary.pdb
+/Users/meghaukkali/RiderProjects/Ecommerce System/MongoDbSharedLibrary/MongoDbSharedLibrary/obj/Debug/net8.0/MongoDbSharedLibrary.dll
+/Users/meghaukkali/RiderProjects/Ecommerce System/MongoDbSharedLibrary/MongoDbSharedLibrary/obj/Debug/net8.0/refint/MongoDbSharedLibrary.dll
+/Users/meghaukkali/RiderProjects/Ecommerce System/MongoDbSharedLibrary/MongoDbSharedLibrary/obj/Debug/net8.0/MongoDbSharedLibrary.pdb
+/Users/meghaukkali/RiderProjects/Ecommerce System/MongoDbSharedLibrary/MongoDbSharedLibrary/obj/Debug/net8.0/ref/MongoDbSharedLibrary.dll

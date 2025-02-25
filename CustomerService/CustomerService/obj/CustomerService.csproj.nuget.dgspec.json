@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/meghaukkali/RiderProjects/CustomerService/CustomerService/CustomerService.csproj": {}
+    "/Users/meghaukkali/RiderProjects/Ecommerce System/CustomerService/CustomerService/CustomerService.csproj": {}
   },
   "projects": {
-    "/Users/meghaukkali/RiderProjects/CustomerService/CustomerService/CustomerService.csproj": {
+    "/Users/meghaukkali/RiderProjects/Ecommerce System/CustomerService/CustomerService/CustomerService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/meghaukkali/RiderProjects/CustomerService/CustomerService/CustomerService.csproj",
+        "projectUniqueName": "/Users/meghaukkali/RiderProjects/Ecommerce System/CustomerService/CustomerService/CustomerService.csproj",
         "projectName": "CustomerService",
-        "projectPath": "/Users/meghaukkali/RiderProjects/CustomerService/CustomerService/CustomerService.csproj",
+        "projectPath": "/Users/meghaukkali/RiderProjects/Ecommerce System/CustomerService/CustomerService/CustomerService.csproj",
         "packagesPath": "/Users/meghaukkali/.nuget/packages/",
-        "outputPath": "/Users/meghaukkali/RiderProjects/CustomerService/CustomerService/obj/",
+        "outputPath": "/Users/meghaukkali/RiderProjects/Ecommerce System/CustomerService/CustomerService/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/meghaukkali/.nuget/NuGet/NuGet.Config"
@@ -20,6 +20,7 @@
           "net8.0"
         ],
         "sources": {
+          "/Users/meghaukkali/.nuget/NuGet/local-nuget-package": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -75,7 +76,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/Users/meghaukkali/.dotnet/sdk/8.0.401/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.405/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

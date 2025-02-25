@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>ServiceDiscoveryLibrary</id>
+    <version>1.0.0</version>
+    <authors>ServiceDiscoveryLibrary</authors>
+    <description>Package Description</description>
+    <repository type="git" />
+    <dependencies>
+      <group targetFramework="net8.0">
+        <dependency id="Consul" version="1.7.14.7" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="/Users/meghaukkali/RiderProjects/ServiceDiscoveryLibrary/ServiceDiscoveryLibrary/bin/Release/net8.0/ServiceDiscoveryLibrary.dll" target="lib/net8.0/ServiceDiscoveryLibrary.dll" />
+  </files>
+</package>

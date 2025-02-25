@@ -16,6 +16,7 @@ public class DbContext : Microsoft.EntityFrameworkCore.DbContext
     {
         modelBuilder.Entity<Customer>().HasKey(c => c.CustomerId);
         modelBuilder.Entity<Customer>().ToTable("Customer");
+        
         modelBuilder.Entity<PaymentDetail>().HasKey(c => c.PaymentId);
     }
 }

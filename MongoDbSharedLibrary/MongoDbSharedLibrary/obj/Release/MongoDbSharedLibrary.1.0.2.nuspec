@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>MongoDbSharedLibrary</id>
+    <version>1.0.2</version>
+    <authors>MongoDbSharedLibrary</authors>
+    <description>Package Description</description>
+    <repository type="git" commit="37ccc21635a4c5371bae2553781f08f941f55185" />
+    <dependencies>
+      <group targetFramework="net8.0">
+        <dependency id="MassTransit.AspNetCore" version="7.3.1" exclude="Build,Analyzers" />
+        <dependency id="MassTransit.RabbitMQ" version="8.3.6" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.Configuration.Binder" version="9.0.1" exclude="Build,Analyzers" />
+        <dependency id="Microsoft.Extensions.DependencyInjection" version="9.0.1" exclude="Build,Analyzers" />
+        <dependency id="MongoDB.Driver" version="3.1.0" exclude="Build,Analyzers" />
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="/Users/meghaukkali/RiderProjects/Ecommerce System/MongoDbSharedLibrary/MongoDbSharedLibrary/bin/Release/net8.0/MongoDbSharedLibrary.dll" target="lib/net8.0/MongoDbSharedLibrary.dll" />
+  </files>
+</package>

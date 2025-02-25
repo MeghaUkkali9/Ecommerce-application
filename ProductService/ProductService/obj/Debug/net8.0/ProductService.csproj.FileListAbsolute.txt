@@ -1,0 +1,99 @@
+/Users/meghaukkali/RiderProjects/ProductService/ProductService/bin/Debug/net8.0/appsettings.Development.json
+/Users/meghaukkali/RiderProjects/ProductService/ProductService/bin/Debug/net8.0/appsettings.json
+/Users/meghaukkali/RiderProjects/ProductService/ProductService/bin/Debug/net8.0/ProductService
+/Users/meghaukkali/RiderProjects/ProductService/ProductService/bin/Debug/net8.0/ProductService.deps.json
+/Users/meghaukkali/RiderProjects/ProductService/ProductService/bin/Debug/net8.0/ProductService.runtimeconfig.json
+/Users/meghaukkali/RiderProjects/ProductService/ProductService/bin/Debug/net8.0/ProductService.dll
+/Users/meghaukkali/RiderProjects/ProductService/ProductService/bin/Debug/net8.0/ProductService.pdb
+/Users/meghaukkali/RiderProjects/ProductService/ProductService/bin/Debug/net8.0/DnsClient.dll
+/Users/meghaukkali/RiderProjects/ProductService/ProductService/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.dll
+/Users/meghaukkali/RiderProjects/ProductService/ProductService/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+/Users/meghaukkali/RiderProjects/ProductService/ProductService/bin/Debug/net8.0/Microsoft.OpenApi.dll
+/Users/meghaukkali/RiderProjects/ProductService/ProductService/bin/Debug/net8.0/MongoDB.Bson.dll
+/Users/meghaukkali/RiderProjects/ProductService/ProductService/bin/Debug/net8.0/MongoDB.Driver.dll
+/Users/meghaukkali/RiderProjects/ProductService/ProductService/bin/Debug/net8.0/SharpCompress.dll
+/Users/meghaukkali/RiderProjects/ProductService/ProductService/bin/Debug/net8.0/Snappier.dll
+/Users/meghaukkali/RiderProjects/ProductService/ProductService/bin/Debug/net8.0/Swashbuckle.AspNetCore.Swagger.dll
+/Users/meghaukkali/RiderProjects/ProductService/ProductService/bin/Debug/net8.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+/Users/meghaukkali/RiderProjects/ProductService/ProductService/bin/Debug/net8.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+/Users/meghaukkali/RiderProjects/ProductService/ProductService/bin/Debug/net8.0/ZstdSharp.dll
+/Users/meghaukkali/RiderProjects/ProductService/ProductService/obj/Debug/net8.0/ProductService.csproj.AssemblyReference.cache
+/Users/meghaukkali/RiderProjects/ProductService/ProductService/obj/Debug/net8.0/ProductService.GeneratedMSBuildEditorConfig.editorconfig
+/Users/meghaukkali/RiderProjects/ProductService/ProductService/obj/Debug/net8.0/ProductService.AssemblyInfoInputs.cache
+/Users/meghaukkali/RiderProjects/ProductService/ProductService/obj/Debug/net8.0/ProductService.AssemblyInfo.cs
+/Users/meghaukkali/RiderProjects/ProductService/ProductService/obj/Debug/net8.0/ProductService.csproj.CoreCompileInputs.cache
+/Users/meghaukkali/RiderProjects/ProductService/ProductService/obj/Debug/net8.0/ProductService.MvcApplicationPartsAssemblyInfo.cs
+/Users/meghaukkali/RiderProjects/ProductService/ProductService/obj/Debug/net8.0/ProductService.MvcApplicationPartsAssemblyInfo.cache
+/Users/meghaukkali/RiderProjects/ProductService/ProductService/obj/Debug/net8.0/staticwebassets.build.json
+/Users/meghaukkali/RiderProjects/ProductService/ProductService/obj/Debug/net8.0/staticwebassets.development.json
+/Users/meghaukkali/RiderProjects/ProductService/ProductService/obj/Debug/net8.0/staticwebassets/msbuild.ProductService.Microsoft.AspNetCore.StaticWebAssets.props
+/Users/meghaukkali/RiderProjects/ProductService/ProductService/obj/Debug/net8.0/staticwebassets/msbuild.build.ProductService.props
+/Users/meghaukkali/RiderProjects/ProductService/ProductService/obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.ProductService.props
+/Users/meghaukkali/RiderProjects/ProductService/ProductService/obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.ProductService.props
+/Users/meghaukkali/RiderProjects/ProductService/ProductService/obj/Debug/net8.0/staticwebassets.pack.json
+/Users/meghaukkali/RiderProjects/ProductService/ProductService/obj/Debug/net8.0/scopedcss/bundle/ProductService.styles.css
+/Users/meghaukkali/RiderProjects/ProductService/ProductService/obj/Debug/net8.0/ProductS.A0FC5512.Up2Date
+/Users/meghaukkali/RiderProjects/ProductService/ProductService/obj/Debug/net8.0/ProductService.dll
+/Users/meghaukkali/RiderProjects/ProductService/ProductService/obj/Debug/net8.0/refint/ProductService.dll
+/Users/meghaukkali/RiderProjects/ProductService/ProductService/obj/Debug/net8.0/ProductService.pdb
+/Users/meghaukkali/RiderProjects/ProductService/ProductService/obj/Debug/net8.0/ProductService.genruntimeconfig.cache
+/Users/meghaukkali/RiderProjects/ProductService/ProductService/obj/Debug/net8.0/ref/ProductService.dll
+/Users/meghaukkali/RiderProjects/Ecommerce System/ProductService/ProductService/bin/Debug/net8.0/appsettings.Development.json
+/Users/meghaukkali/RiderProjects/Ecommerce System/ProductService/ProductService/bin/Debug/net8.0/appsettings.json
+/Users/meghaukkali/RiderProjects/Ecommerce System/ProductService/ProductService/bin/Debug/net8.0/ProductService
+/Users/meghaukkali/RiderProjects/Ecommerce System/ProductService/ProductService/bin/Debug/net8.0/ProductService.deps.json
+/Users/meghaukkali/RiderProjects/Ecommerce System/ProductService/ProductService/bin/Debug/net8.0/ProductService.runtimeconfig.json
+/Users/meghaukkali/RiderProjects/Ecommerce System/ProductService/ProductService/bin/Debug/net8.0/ProductService.dll
+/Users/meghaukkali/RiderProjects/Ecommerce System/ProductService/ProductService/bin/Debug/net8.0/ProductService.pdb
+/Users/meghaukkali/RiderProjects/Ecommerce System/ProductService/ProductService/bin/Debug/net8.0/DnsClient.dll
+/Users/meghaukkali/RiderProjects/Ecommerce System/ProductService/ProductService/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.dll
+/Users/meghaukkali/RiderProjects/Ecommerce System/ProductService/ProductService/bin/Debug/net8.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+/Users/meghaukkali/RiderProjects/Ecommerce System/ProductService/ProductService/bin/Debug/net8.0/Microsoft.OpenApi.dll
+/Users/meghaukkali/RiderProjects/Ecommerce System/ProductService/ProductService/bin/Debug/net8.0/MongoDB.Bson.dll
+/Users/meghaukkali/RiderProjects/Ecommerce System/ProductService/ProductService/bin/Debug/net8.0/MongoDB.Driver.dll
+/Users/meghaukkali/RiderProjects/Ecommerce System/ProductService/ProductService/bin/Debug/net8.0/SharpCompress.dll
+/Users/meghaukkali/RiderProjects/Ecommerce System/ProductService/ProductService/bin/Debug/net8.0/Snappier.dll
+/Users/meghaukkali/RiderProjects/Ecommerce System/ProductService/ProductService/bin/Debug/net8.0/Swashbuckle.AspNetCore.Swagger.dll
+/Users/meghaukkali/RiderProjects/Ecommerce System/ProductService/ProductService/bin/Debug/net8.0/Swashbuckle.AspNetCore.SwaggerGen.dll
+/Users/meghaukkali/RiderProjects/Ecommerce System/ProductService/ProductService/bin/Debug/net8.0/Swashbuckle.AspNetCore.SwaggerUI.dll
+/Users/meghaukkali/RiderProjects/Ecommerce System/ProductService/ProductService/bin/Debug/net8.0/ZstdSharp.dll
+/Users/meghaukkali/RiderProjects/Ecommerce System/ProductService/ProductService/obj/Debug/net8.0/ProductService.csproj.AssemblyReference.cache
+/Users/meghaukkali/RiderProjects/Ecommerce System/ProductService/ProductService/obj/Debug/net8.0/ProductService.GeneratedMSBuildEditorConfig.editorconfig
+/Users/meghaukkali/RiderProjects/Ecommerce System/ProductService/ProductService/obj/Debug/net8.0/ProductService.AssemblyInfoInputs.cache
+/Users/meghaukkali/RiderProjects/Ecommerce System/ProductService/ProductService/obj/Debug/net8.0/ProductService.AssemblyInfo.cs
+/Users/meghaukkali/RiderProjects/Ecommerce System/ProductService/ProductService/obj/Debug/net8.0/ProductService.csproj.CoreCompileInputs.cache
+/Users/meghaukkali/RiderProjects/Ecommerce System/ProductService/ProductService/obj/Debug/net8.0/ProductService.MvcApplicationPartsAssemblyInfo.cs
+/Users/meghaukkali/RiderProjects/Ecommerce System/ProductService/ProductService/obj/Debug/net8.0/ProductService.MvcApplicationPartsAssemblyInfo.cache
+/Users/meghaukkali/RiderProjects/Ecommerce System/ProductService/ProductService/obj/Debug/net8.0/ProductService.sourcelink.json
+/Users/meghaukkali/RiderProjects/Ecommerce System/ProductService/ProductService/obj/Debug/net8.0/staticwebassets.build.json
+/Users/meghaukkali/RiderProjects/Ecommerce System/ProductService/ProductService/obj/Debug/net8.0/staticwebassets.development.json
+/Users/meghaukkali/RiderProjects/Ecommerce System/ProductService/ProductService/obj/Debug/net8.0/staticwebassets/msbuild.ProductService.Microsoft.AspNetCore.StaticWebAssets.props
+/Users/meghaukkali/RiderProjects/Ecommerce System/ProductService/ProductService/obj/Debug/net8.0/staticwebassets/msbuild.build.ProductService.props
+/Users/meghaukkali/RiderProjects/Ecommerce System/ProductService/ProductService/obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.ProductService.props
+/Users/meghaukkali/RiderProjects/Ecommerce System/ProductService/ProductService/obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.ProductService.props
+/Users/meghaukkali/RiderProjects/Ecommerce System/ProductService/ProductService/obj/Debug/net8.0/staticwebassets.pack.json
+/Users/meghaukkali/RiderProjects/Ecommerce System/ProductService/ProductService/obj/Debug/net8.0/scopedcss/bundle/ProductService.styles.css
+/Users/meghaukkali/RiderProjects/Ecommerce System/ProductService/ProductService/obj/Debug/net8.0/ProductS.A0FC5512.Up2Date
+/Users/meghaukkali/RiderProjects/Ecommerce System/ProductService/ProductService/obj/Debug/net8.0/ProductService.dll
+/Users/meghaukkali/RiderProjects/Ecommerce System/ProductService/ProductService/obj/Debug/net8.0/refint/ProductService.dll
+/Users/meghaukkali/RiderProjects/Ecommerce System/ProductService/ProductService/obj/Debug/net8.0/ProductService.pdb
+/Users/meghaukkali/RiderProjects/Ecommerce System/ProductService/ProductService/obj/Debug/net8.0/ProductService.genruntimeconfig.cache
+/Users/meghaukkali/RiderProjects/Ecommerce System/ProductService/ProductService/obj/Debug/net8.0/ref/ProductService.dll
+/Users/meghaukkali/RiderProjects/Ecommerce System/ProductService/ProductService/bin/Debug/net8.0/Microsoft.Extensions.Configuration.Abstractions.dll
+/Users/meghaukkali/RiderProjects/Ecommerce System/ProductService/ProductService/bin/Debug/net8.0/Microsoft.Extensions.Configuration.Binder.dll
+/Users/meghaukkali/RiderProjects/Ecommerce System/ProductService/ProductService/bin/Debug/net8.0/Microsoft.Extensions.DependencyInjection.dll
+/Users/meghaukkali/RiderProjects/Ecommerce System/ProductService/ProductService/bin/Debug/net8.0/Microsoft.Extensions.DependencyInjection.Abstractions.dll
+/Users/meghaukkali/RiderProjects/Ecommerce System/ProductService/ProductService/bin/Debug/net8.0/Microsoft.Extensions.Primitives.dll
+/Users/meghaukkali/RiderProjects/Ecommerce System/ProductService/ProductService/bin/Debug/net8.0/MongoDbSharedLibrary.dll
+/Users/meghaukkali/RiderProjects/Ecommerce System/ProductService/ProductService/bin/Debug/net8.0/Microsoft.Extensions.Configuration.dll
+/Users/meghaukkali/RiderProjects/Ecommerce System/ProductService/ProductService/bin/Debug/net8.0/Microsoft.Extensions.Diagnostics.dll
+/Users/meghaukkali/RiderProjects/Ecommerce System/ProductService/ProductService/bin/Debug/net8.0/Microsoft.Extensions.Diagnostics.Abstractions.dll
+/Users/meghaukkali/RiderProjects/Ecommerce System/ProductService/ProductService/bin/Debug/net8.0/Microsoft.Extensions.Http.dll
+/Users/meghaukkali/RiderProjects/Ecommerce System/ProductService/ProductService/bin/Debug/net8.0/Microsoft.Extensions.Http.Polly.dll
+/Users/meghaukkali/RiderProjects/Ecommerce System/ProductService/ProductService/bin/Debug/net8.0/Microsoft.Extensions.Logging.dll
+/Users/meghaukkali/RiderProjects/Ecommerce System/ProductService/ProductService/bin/Debug/net8.0/Microsoft.Extensions.Logging.Abstractions.dll
+/Users/meghaukkali/RiderProjects/Ecommerce System/ProductService/ProductService/bin/Debug/net8.0/Microsoft.Extensions.Options.dll
+/Users/meghaukkali/RiderProjects/Ecommerce System/ProductService/ProductService/bin/Debug/net8.0/Microsoft.Extensions.Options.ConfigurationExtensions.dll
+/Users/meghaukkali/RiderProjects/Ecommerce System/ProductService/ProductService/bin/Debug/net8.0/Polly.dll
+/Users/meghaukkali/RiderProjects/Ecommerce System/ProductService/ProductService/bin/Debug/net8.0/Polly.Extensions.Http.dll
+/Users/meghaukkali/RiderProjects/Ecommerce System/ProductService/ProductService/bin/Debug/net8.0/System.Diagnostics.DiagnosticSource.dll

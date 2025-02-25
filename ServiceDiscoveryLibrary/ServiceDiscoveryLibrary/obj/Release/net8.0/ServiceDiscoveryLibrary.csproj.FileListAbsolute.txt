@@ -1,0 +1,25 @@
+/Users/meghaukkali/RiderProjects/ServiceDiscoveryLibrary/ServiceDiscoveryLibrary/bin/Release/net8.0/ServiceDiscoveryLibrary.deps.json
+/Users/meghaukkali/RiderProjects/ServiceDiscoveryLibrary/ServiceDiscoveryLibrary/bin/Release/net8.0/ServiceDiscoveryLibrary.dll
+/Users/meghaukkali/RiderProjects/ServiceDiscoveryLibrary/ServiceDiscoveryLibrary/bin/Release/net8.0/ServiceDiscoveryLibrary.pdb
+/Users/meghaukkali/RiderProjects/ServiceDiscoveryLibrary/ServiceDiscoveryLibrary/obj/Release/net8.0/ServiceDiscoveryLibrary.csproj.AssemblyReference.cache
+/Users/meghaukkali/RiderProjects/ServiceDiscoveryLibrary/ServiceDiscoveryLibrary/obj/Release/net8.0/ServiceDiscoveryLibrary.GeneratedMSBuildEditorConfig.editorconfig
+/Users/meghaukkali/RiderProjects/ServiceDiscoveryLibrary/ServiceDiscoveryLibrary/obj/Release/net8.0/ServiceDiscoveryLibrary.AssemblyInfoInputs.cache
+/Users/meghaukkali/RiderProjects/ServiceDiscoveryLibrary/ServiceDiscoveryLibrary/obj/Release/net8.0/ServiceDiscoveryLibrary.AssemblyInfo.cs
+/Users/meghaukkali/RiderProjects/ServiceDiscoveryLibrary/ServiceDiscoveryLibrary/obj/Release/net8.0/ServiceDiscoveryLibrary.csproj.CoreCompileInputs.cache
+/Users/meghaukkali/RiderProjects/ServiceDiscoveryLibrary/ServiceDiscoveryLibrary/obj/Release/net8.0/ServiceDiscoveryLibrary.dll
+/Users/meghaukkali/RiderProjects/ServiceDiscoveryLibrary/ServiceDiscoveryLibrary/obj/Release/net8.0/refint/ServiceDiscoveryLibrary.dll
+/Users/meghaukkali/RiderProjects/ServiceDiscoveryLibrary/ServiceDiscoveryLibrary/obj/Release/net8.0/ServiceDiscoveryLibrary.pdb
+/Users/meghaukkali/RiderProjects/ServiceDiscoveryLibrary/ServiceDiscoveryLibrary/obj/Release/net8.0/ref/ServiceDiscoveryLibrary.dll
+/Users/meghaukkali/RiderProjects/Ecommerce System/ServiceDiscoveryLibrary/ServiceDiscoveryLibrary/bin/Release/net8.0/ServiceDiscoveryLibrary.deps.json
+/Users/meghaukkali/RiderProjects/Ecommerce System/ServiceDiscoveryLibrary/ServiceDiscoveryLibrary/bin/Release/net8.0/ServiceDiscoveryLibrary.dll
+/Users/meghaukkali/RiderProjects/Ecommerce System/ServiceDiscoveryLibrary/ServiceDiscoveryLibrary/bin/Release/net8.0/ServiceDiscoveryLibrary.pdb
+/Users/meghaukkali/RiderProjects/Ecommerce System/ServiceDiscoveryLibrary/ServiceDiscoveryLibrary/obj/Release/net8.0/ServiceDiscoveryLibrary.csproj.AssemblyReference.cache
+/Users/meghaukkali/RiderProjects/Ecommerce System/ServiceDiscoveryLibrary/ServiceDiscoveryLibrary/obj/Release/net8.0/ServiceDiscoveryLibrary.GeneratedMSBuildEditorConfig.editorconfig
+/Users/meghaukkali/RiderProjects/Ecommerce System/ServiceDiscoveryLibrary/ServiceDiscoveryLibrary/obj/Release/net8.0/ServiceDiscoveryLibrary.AssemblyInfoInputs.cache
+/Users/meghaukkali/RiderProjects/Ecommerce System/ServiceDiscoveryLibrary/ServiceDiscoveryLibrary/obj/Release/net8.0/ServiceDiscoveryLibrary.AssemblyInfo.cs
+/Users/meghaukkali/RiderProjects/Ecommerce System/ServiceDiscoveryLibrary/ServiceDiscoveryLibrary/obj/Release/net8.0/ServiceDiscoveryLibrary.csproj.CoreCompileInputs.cache
+/Users/meghaukkali/RiderProjects/Ecommerce System/ServiceDiscoveryLibrary/ServiceDiscoveryLibrary/obj/Release/net8.0/ServiceDiscoveryLibrary.sourcelink.json
+/Users/meghaukkali/RiderProjects/Ecommerce System/ServiceDiscoveryLibrary/ServiceDiscoveryLibrary/obj/Release/net8.0/ServiceDiscoveryLibrary.dll
+/Users/meghaukkali/RiderProjects/Ecommerce System/ServiceDiscoveryLibrary/ServiceDiscoveryLibrary/obj/Release/net8.0/refint/ServiceDiscoveryLibrary.dll
+/Users/meghaukkali/RiderProjects/Ecommerce System/ServiceDiscoveryLibrary/ServiceDiscoveryLibrary/obj/Release/net8.0/ServiceDiscoveryLibrary.pdb
+/Users/meghaukkali/RiderProjects/Ecommerce System/ServiceDiscoveryLibrary/ServiceDiscoveryLibrary/obj/Release/net8.0/ref/ServiceDiscoveryLibrary.dll

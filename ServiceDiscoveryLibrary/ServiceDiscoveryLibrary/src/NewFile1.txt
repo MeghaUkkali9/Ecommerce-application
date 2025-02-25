@@ -1,0 +1,1 @@
+ dotnet add package ServiceDiscoveryLibrary --source ../../local-nuget-package --version 1.0.1 

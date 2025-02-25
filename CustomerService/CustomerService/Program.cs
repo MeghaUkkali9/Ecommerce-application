@@ -4,11 +4,8 @@ using Microsoft.EntityFrameworkCore;
 using DbContext = CustomerService.Data.DbContext;
 
 var builder = WebApplication.CreateBuilder(args);
-
-// Add services to the container.
 IocConfiguration.ConfigureServices(builder.Services);
 
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
@@ -18,15 +15,18 @@ builder.Services.AddDbContext<DbContext>(options =>
 
 var app = builder.Build();
 
-// Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
+
+if ( app.Environment.IsProduction())
 {
     app.UseSwagger();
-    app.UseSwaggerUI();
+    app.UseSwaggerUI(c =>
+    {
+        c.SwaggerEndpoint("/swagger/v1/swagger.json", "Customer Service API v1");
+        c.RoutePrefix = "swagger"; 
+    });
 }
 
-app.UseHttpsRedirection();
-
+app.MapGet("/health", () => Results.Ok("Healthy"));
 app.UseAuthorization();
 
 app.MapControllers();

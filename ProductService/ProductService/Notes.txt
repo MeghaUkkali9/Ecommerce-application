@@ -1,0 +1,14 @@
+To run mongo server:
+    mongod --dbpath /Users/meghaukkali/mongodb-data
+
+In a distributed system, whenever a service makes synchronous call to another service, there will be always 
+a case of risks associated with it may be it is network outages, hardware failures, deployment in progress.
+
+so, it's our responsibility as a SD to make sure the system to be resilient in such cases.
+
+Solution would be:
+1. setting up timeouts (helps the system being more responsive) but also system should retry( retrying using Polly 
+    with exponential back off) before sending timeout failure to client.
+    Exponential back off: requests are sent to another service in such way that there will be time gap 
+        between each request like 2,4,8
+2. using Circuit breaker.
