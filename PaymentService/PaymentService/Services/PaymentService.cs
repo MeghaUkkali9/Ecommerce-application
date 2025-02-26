@@ -30,7 +30,7 @@ public class PaymentService : IPaymentService
         {
             OrderId = orderId,
             Amount = amount,
-            PaymentStatus = PaymentStatus.Completed,
+            PaymentStatus = PaymentStatus.Successful,
             PaymentDate = DateTime.Now,
             PaymentMethod = paymentMethod
         };
@@ -44,7 +44,7 @@ public class PaymentService : IPaymentService
     {
         var payment = await _paymentRepository.GetPaymentByOrderIdAsync(orderId);
         if (payment == null)
-            throw new Exception("Payment not found for the provided order.");
+            return null;
 
         return _paymentMapper.MapToPaymentDto(payment);
     }

@@ -1,0 +1,13 @@
+ To get in mysql container:
+    docker exec -it <container_name> mysql -u root -p
+    
+    
+To create contracts:(can be accessed in any projects)
+1. create library under OrderService named `OrderService.Contracts`
+2. add reference where you see service's project file: (Meghas-MacBook-Air OrderService %) dotnet add reference ../OrderService.Contracts/OrderService.Contracts.csproj
+
+To start rabbitmq and mysql in docker container.
+ 1. run command `docker-compose up -d` (this will start running rabbitmq and mysql in container)
+ you can use `http://localhost:15672` to login rabbitmq from browser with credentials (user:guest, password:guest)
+ To run actual service.
+ 1. dotnet run

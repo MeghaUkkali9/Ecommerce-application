@@ -17,10 +17,10 @@ public class OrderMapper : IOrderMapper
         {
             OrderId = order.OrderId,
             CustomerId = order.CustomerId,
-            OrderStatus = (OrderStatus)Enum.Parse(typeof(OrderStatus), order.OrderStatus),
             TotalAmount = order.TotalAmount,
+            OrderStatus = order.OrderStatus,
             OrderDate = order.OrderDate,
-            PaymentStatus = (PaymentStatus)Enum.Parse(typeof(PaymentStatus),order.PaymentStatus),
+            PaymentStatus = order.PaymentStatus,
             ShippingAddress = order.ShippingAddress,
             ShippingDate = order.ShippingDate
         };
@@ -33,7 +33,6 @@ public class OrderMapper : IOrderMapper
             OrderId = orderDto.OrderId,
             CustomerId = orderDto.CustomerId,
             OrderStatus = orderDto.OrderStatus.ToString(),
-            TotalAmount = orderDto.TotalAmount,
             OrderDate = orderDto.OrderDate,
             PaymentStatus = orderDto.PaymentStatus.ToString(),
             ShippingAddress = orderDto.ShippingAddress,

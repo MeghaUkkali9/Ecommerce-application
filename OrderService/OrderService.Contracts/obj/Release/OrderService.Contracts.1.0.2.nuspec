@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>OrderService.Contracts</id>
+    <version>1.0.2</version>
+    <authors>OrderService.Contracts</authors>
+    <description>Package Description</description>
+    <repository type="git" commit="cec73a146af17d30cca1ca8ecf81b2402d5cc66b" />
+    <dependencies>
+      <group targetFramework="net8.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="/Users/meghaukkali/RiderProjects/Ecommerce System/OrderService/OrderService.Contracts/bin/Release/net8.0/OrderService.Contracts.dll" target="lib/net8.0/OrderService.Contracts.dll" />
+  </files>
+</package>

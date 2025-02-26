@@ -1,3 +1,4 @@
+using MassTransit;
 using Microsoft.AspNetCore.Mvc;
 using OrderService.Dtos;
 using OrderService.Services;
@@ -9,10 +10,12 @@ namespace OrderService.Controllers
     public class OrderController : ControllerBase
     {
         private readonly IOrderService _orderService;
-
-        public OrderController(IOrderService orderService)
+        private readonly IPublishEndpoint _publishEndpoint;
+        
+        public OrderController(IOrderService orderService, IPublishEndpoint publishEndpoint)
         {
             _orderService = orderService;
+            _publishEndpoint = publishEndpoint;
         }
 
         [HttpGet("{id}")]
@@ -42,20 +45,23 @@ namespace OrderService.Controllers
             var orderDto = new OrderDto()
             {
                 CustomerId = createOrder.CustomerId,
-                OrderStatus = OrderStatus.Pending,
-                TotalAmount = createOrder.TotalAmount,
+                OrderStatus = "Pending",
                 OrderDate = DateTime.UtcNow,
-                PaymentStatus = PaymentStatus.Pending,
+                PaymentStatus = "Pending",
                 ShippingAddress = createOrder.ShippingAddress,
                 ShippingDate = createOrder.ShippingDate
             };
 
             var createdOrder = await _orderService.CreateOrder(orderDto);
+            _publishEndpoint.Publish(new Contracts.Contracts.OrderCreated
+            (createdOrder.OrderId,
+                createdOrder.TotalAmount, "cash"));
+            
             return CreatedAtAction(nameof(GetOrder),
                 new { id = createdOrder.OrderId }, createdOrder);
         }
         
-        [HttpPost]
+        [HttpPost("placeorder")]
         [ProducesResponseType(StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public async Task<ActionResult<OrderDto>> PlaceOrder([FromBody] OrderRequest request)
@@ -70,13 +76,10 @@ namespace OrderService.Controllers
             await _orderService.ProcessOrder(request);
             var orderDto = new OrderDto()
             {
-                CustomerId = createOrder.CustomerId,
-                OrderStatus = OrderStatus.Pending,
-                TotalAmount = createOrder.TotalAmount,
+                CustomerId = request.CustomerId,
+                OrderStatus = "Pending",
                 OrderDate = DateTime.UtcNow,
-                PaymentStatus = PaymentStatus.Pending,
-                ShippingAddress = createOrder.ShippingAddress,
-                ShippingDate = createOrder.ShippingDate
+                PaymentStatus = "Pending"
             };
 
             var createdOrder = await _orderService.CreateOrder(orderDto);
@@ -93,10 +96,9 @@ namespace OrderService.Controllers
             var orderDto = new OrderDto()
             {
                 CustomerId = updateOrderRequest.CustomerId,
-                OrderStatus = OrderStatus.Pending,
-                TotalAmount = updateOrderRequest.TotalAmount,
+                OrderStatus = "Pending",
                 OrderDate = DateTime.UtcNow,
-                PaymentStatus = PaymentStatus.Pending,
+                PaymentStatus = "Pending",
                 ShippingAddress = updateOrderRequest.ShippingAddress,
                 ShippingDate = updateOrderRequest.ShippingDate
             };

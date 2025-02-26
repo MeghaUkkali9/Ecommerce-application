@@ -5,7 +5,7 @@
   },
   "projects": {
     "/Users/meghaukkali/RiderProjects/Ecommerce System/MongoDbSharedLibrary/MongoDbSharedLibrary/MongoDbSharedLibrary.csproj": {
-      "version": "1.0.2",
+      "version": "1.0.1",
       "restore": {
         "projectUniqueName": "/Users/meghaukkali/RiderProjects/Ecommerce System/MongoDbSharedLibrary/MongoDbSharedLibrary/MongoDbSharedLibrary.csproj",
         "projectName": "MongoDbSharedLibrary",

@@ -5,7 +5,7 @@ namespace OrderService.Proxies;
 
 public interface ICustomerProxy
 {
-    Task<bool> IsCustomerRegistered(string customerId);
+    Task<bool> IsCustomerRegistered(int customerId);
 }
 
 public class CustomerProxy : ICustomerProxy
@@ -17,7 +17,7 @@ public class CustomerProxy : ICustomerProxy
         _httpClient = httpClient;
     }
 
-    public async Task<bool> IsCustomerRegistered(string customerId)
+    public async Task<bool> IsCustomerRegistered(int customerId)
     {
        var response = await _httpClient.GetAsync("api/customers/" + customerId);
        if (!response.IsSuccessStatusCode)

@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v8.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v8.0": {
+      "OrderService.Contracts/1.0.2": {
+        "runtime": {
+          "OrderService.Contracts.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "OrderService.Contracts/1.0.2": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

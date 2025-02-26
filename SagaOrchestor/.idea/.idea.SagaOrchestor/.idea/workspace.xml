@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="57722d82-bd23-46d5-8faa-9377e69607f4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../OrderService/OrderService/Notes.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OrderService/OrderService/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../OrderService/OrderService/init-scripts/init.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../PaymentService/PaymentService/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ProductService/ProductService/NewFile1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SagaOrchestor/OrderSaga.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/SagaOrchestor/OrderState.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../CustomerService/CustomerService/obj/rider.project.model.nuget.info" beforeDir="false" afterPath="$PROJECT_DIR$/../CustomerService/CustomerService/obj/rider.project.model.nuget.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../InventoryService/.idea/.idea.InventoryService/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../InventoryService/.idea/.idea.InventoryService/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../InventoryService/InventoryService/obj/Debug/net8.0/InventoryService.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../InventoryService/InventoryService/obj/Debug/net8.0/InventoryService.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../InventoryService/InventoryService/obj/Debug/net8.0/InventoryService.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../InventoryService/InventoryService/obj/Debug/net8.0/InventoryService.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDbSharedLibrary/MongoDbSharedLibrary/obj/Debug/net8.0/MongoDbSharedLibrary.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../MongoDbSharedLibrary/MongoDbSharedLibrary/obj/Debug/net8.0/MongoDbSharedLibrary.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDbSharedLibrary/MongoDbSharedLibrary/obj/Debug/net8.0/MongoDbSharedLibrary.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../MongoDbSharedLibrary/MongoDbSharedLibrary/obj/Debug/net8.0/MongoDbSharedLibrary.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDbSharedLibrary/MongoDbSharedLibrary/obj/MongoDbSharedLibrary.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/../MongoDbSharedLibrary/MongoDbSharedLibrary/obj/MongoDbSharedLibrary.csproj.nuget.dgspec.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDbSharedLibrary/MongoDbSharedLibrary/obj/MongoDbSharedLibrary.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/../MongoDbSharedLibrary/MongoDbSharedLibrary/obj/MongoDbSharedLibrary.csproj.nuget.g.props" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDbSharedLibrary/MongoDbSharedLibrary/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/../MongoDbSharedLibrary/MongoDbSharedLibrary/obj/project.assets.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDbSharedLibrary/MongoDbSharedLibrary/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../MongoDbSharedLibrary/MongoDbSharedLibrary/obj/project.nuget.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../MongoDbSharedLibrary/MongoDbSharedLibrary/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/../MongoDbSharedLibrary/MongoDbSharedLibrary/obj/rider.project.restore.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OrderService/.idea/.idea.OrderService/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../OrderService/.idea/.idea.OrderService/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OrderService/OrderService/Controllers/OrderController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../OrderService/OrderService/Controllers/OrderController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OrderService/OrderService/Dtos/OrderDto.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../OrderService/OrderService/Dtos/OrderDto.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OrderService/OrderService/Dtos/OrderRequest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../OrderService/OrderService/Dtos/OrderRequest.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OrderService/OrderService/IocConfiguration.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../OrderService/OrderService/IocConfiguration.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OrderService/OrderService/Mappers/OrderMapper.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../OrderService/OrderService/Mappers/OrderMapper.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OrderService/OrderService/Proxies/CustomerProxy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../OrderService/OrderService/Proxies/CustomerProxy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OrderService/OrderService/Services/OrderService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../OrderService/OrderService/Services/OrderService.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OrderService/OrderService/bin/Debug/net8.0/OrderService.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/../OrderService/OrderService/bin/Debug/net8.0/OrderService.deps.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OrderService/OrderService/bin/Debug/net8.0/OrderService.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../OrderService/OrderService/bin/Debug/net8.0/OrderService.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OrderService/OrderService/bin/Debug/net8.0/OrderService.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../OrderService/OrderService/bin/Debug/net8.0/OrderService.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OrderService/OrderService/bin/Debug/net8.0/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/../OrderService/OrderService/bin/Debug/net8.0/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OrderService/OrderService/obj/Debug/net8.0/OrderService.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../OrderService/OrderService/obj/Debug/net8.0/OrderService.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OrderService/OrderService/obj/Debug/net8.0/OrderService.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../OrderService/OrderService/obj/Debug/net8.0/OrderService.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OrderService/OrderService/obj/Debug/net8.0/OrderService.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../OrderService/OrderService/obj/Debug/net8.0/OrderService.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OrderService/OrderService/obj/Debug/net8.0/OrderService.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../OrderService/OrderService/obj/Debug/net8.0/OrderService.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OrderService/OrderService/obj/Debug/net8.0/OrderService.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../OrderService/OrderService/obj/Debug/net8.0/OrderService.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OrderService/OrderService/obj/Debug/net8.0/OrderService.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../OrderService/OrderService/obj/Debug/net8.0/OrderService.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OrderService/OrderService/obj/Debug/net8.0/OrderService.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/../OrderService/OrderService/obj/Debug/net8.0/OrderService.sourcelink.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OrderService/OrderService/obj/Debug/net8.0/ref/OrderService.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../OrderService/OrderService/obj/Debug/net8.0/ref/OrderService.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../OrderService/OrderService/obj/Debug/net8.0/refint/OrderService.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../OrderService/OrderService/obj/Debug/net8.0/refint/OrderService.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PaymentService/.idea/.idea.PaymentService/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../PaymentService/.idea/.idea.PaymentService/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PaymentService/PaymentService/bin/Debug/net8.0/PaymentService.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../PaymentService/PaymentService/bin/Debug/net8.0/PaymentService.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PaymentService/PaymentService/bin/Debug/net8.0/PaymentService.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../PaymentService/PaymentService/bin/Debug/net8.0/PaymentService.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PaymentService/PaymentService/obj/Debug/net8.0/PaymentService.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../PaymentService/PaymentService/obj/Debug/net8.0/PaymentService.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PaymentService/PaymentService/obj/Debug/net8.0/PaymentService.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../PaymentService/PaymentService/obj/Debug/net8.0/PaymentService.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PaymentService/PaymentService/obj/Debug/net8.0/PaymentService.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../PaymentService/PaymentService/obj/Debug/net8.0/PaymentService.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PaymentService/PaymentService/obj/Debug/net8.0/PaymentService.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../PaymentService/PaymentService/obj/Debug/net8.0/PaymentService.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PaymentService/PaymentService/obj/Debug/net8.0/PaymentService.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/../PaymentService/PaymentService/obj/Debug/net8.0/PaymentService.sourcelink.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PaymentService/PaymentService/obj/Debug/net8.0/ref/PaymentService.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../PaymentService/PaymentService/obj/Debug/net8.0/ref/PaymentService.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../PaymentService/PaymentService/obj/Debug/net8.0/refint/PaymentService.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../PaymentService/PaymentService/obj/Debug/net8.0/refint/PaymentService.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProductService/ProductService/bin/Debug/net8.0/ProductService.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../ProductService/ProductService/bin/Debug/net8.0/ProductService.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProductService/ProductService/bin/Debug/net8.0/ProductService.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../ProductService/ProductService/bin/Debug/net8.0/ProductService.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProductService/ProductService/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../ProductService/ProductService/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProductService/ProductService/obj/Debug/net8.0/ProductService.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/../ProductService/ProductService/obj/Debug/net8.0/ProductService.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProductService/ProductService/obj/Debug/net8.0/ProductService.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/../ProductService/ProductService/obj/Debug/net8.0/ProductService.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProductService/ProductService/obj/Debug/net8.0/ProductService.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../ProductService/ProductService/obj/Debug/net8.0/ProductService.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProductService/ProductService/obj/Debug/net8.0/ProductService.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/../ProductService/ProductService/obj/Debug/net8.0/ProductService.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProductService/ProductService/obj/Debug/net8.0/ProductService.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/../ProductService/ProductService/obj/Debug/net8.0/ProductService.sourcelink.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProductService/ProductService/obj/Debug/net8.0/ref/ProductService.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../ProductService/ProductService/obj/Debug/net8.0/ref/ProductService.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ProductService/ProductService/obj/Debug/net8.0/refint/ProductService.dll" beforeDir="false" afterPath="$PROJECT_DIR$/../ProductService/ProductService/obj/Debug/net8.0/refint/ProductService.dll" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 1
+}]]></component>
+  <component name="ProjectId" id="2tZvAC8yhIGVx5k7kiR8ocHPoiZ" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="57722d82-bd23-46d5-8faa-9377e69607f4" name="Changes" comment="" />
+      <created>1740572265215</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1740572265215</updated>
+      <workItem from="1740572266521" duration="599000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
+</project>

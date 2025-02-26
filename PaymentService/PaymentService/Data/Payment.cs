@@ -16,7 +16,7 @@ public class Payment
 public enum PaymentStatus
 {
     Pending,
-    Completed,
+    Successful,
     Failed,
     Refunded
 }

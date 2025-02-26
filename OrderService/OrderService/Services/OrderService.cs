@@ -53,7 +53,6 @@ public class OrderService : IOrderService
         if (existingOrder == null) return null;
 
         existingOrder.OrderStatus = updateOrderRequest.OrderStatus.ToString();
-        existingOrder.TotalAmount = updateOrderRequest.TotalAmount;
         existingOrder.PaymentStatus = updateOrderRequest.PaymentStatus.ToString();
         existingOrder.ShippingAddress = updateOrderRequest.ShippingAddress;
         existingOrder.ShippingDate = updateOrderRequest.ShippingDate;

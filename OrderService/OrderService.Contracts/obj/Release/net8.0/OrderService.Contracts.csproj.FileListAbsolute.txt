@@ -1,0 +1,12 @@
+/Users/meghaukkali/RiderProjects/Ecommerce System/OrderService/OrderService.Contracts/bin/Release/net8.0/OrderService.Contracts.deps.json
+/Users/meghaukkali/RiderProjects/Ecommerce System/OrderService/OrderService.Contracts/bin/Release/net8.0/OrderService.Contracts.dll
+/Users/meghaukkali/RiderProjects/Ecommerce System/OrderService/OrderService.Contracts/bin/Release/net8.0/OrderService.Contracts.pdb
+/Users/meghaukkali/RiderProjects/Ecommerce System/OrderService/OrderService.Contracts/obj/Release/net8.0/OrderService.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+/Users/meghaukkali/RiderProjects/Ecommerce System/OrderService/OrderService.Contracts/obj/Release/net8.0/OrderService.Contracts.AssemblyInfoInputs.cache
+/Users/meghaukkali/RiderProjects/Ecommerce System/OrderService/OrderService.Contracts/obj/Release/net8.0/OrderService.Contracts.AssemblyInfo.cs
+/Users/meghaukkali/RiderProjects/Ecommerce System/OrderService/OrderService.Contracts/obj/Release/net8.0/OrderService.Contracts.csproj.CoreCompileInputs.cache
+/Users/meghaukkali/RiderProjects/Ecommerce System/OrderService/OrderService.Contracts/obj/Release/net8.0/OrderService.Contracts.sourcelink.json
+/Users/meghaukkali/RiderProjects/Ecommerce System/OrderService/OrderService.Contracts/obj/Release/net8.0/OrderService.Contracts.dll
+/Users/meghaukkali/RiderProjects/Ecommerce System/OrderService/OrderService.Contracts/obj/Release/net8.0/refint/OrderService.Contracts.dll
+/Users/meghaukkali/RiderProjects/Ecommerce System/OrderService/OrderService.Contracts/obj/Release/net8.0/OrderService.Contracts.pdb
+/Users/meghaukkali/RiderProjects/Ecommerce System/OrderService/OrderService.Contracts/obj/Release/net8.0/ref/OrderService.Contracts.dll

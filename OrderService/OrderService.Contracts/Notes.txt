@@ -1,0 +1,10 @@
+To publish contract to local nuget package:
+
+    Ecommerce System % cd OrderService/OrderService.Contracts 
+    OrderService.Contracts % ls
+    Contracts.cs                    OrderService.Contracts.csproj   bin                             obj
+    -> OrderService.Contracts % dotnet pack --output ../../local-nuget-package
+    
+ To add this package in any other projects:
+    -> dotnet add package OrderService.Contracts --source ../../local-nuget-package --version 1.0.0
+

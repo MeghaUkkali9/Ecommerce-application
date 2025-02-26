@@ -1,5 +1,6 @@
 using System.Text.Json.Serialization;
 using Microsoft.EntityFrameworkCore;
+using MongoDbSharedLibrary.RabbitMq;
 using PaymentService;
 using PaymentService.Data;
 
@@ -11,6 +12,8 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddDbContext<PaymentDbContext>(options =>
     options.UseMySql(builder.Configuration.GetConnectionString("MySqlConnection"),
         new MySqlServerVersion(new Version(8, 0, 2))));
+
+builder.Services.AddRabbitMqWithMassTransit();
 
 builder.Services.AddControllers().AddJsonOptions(options =>
     {

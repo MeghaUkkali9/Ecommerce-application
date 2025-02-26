@@ -1,0 +1,1 @@
+Requests made to localhost:27017 on our machine are forwarded to MongoDB inside Docker.

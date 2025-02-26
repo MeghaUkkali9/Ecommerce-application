@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using PaymentService.Data;
 using PaymentService.Dtos;
+using PaymentService.Extensions;
 using PaymentService.Services;
 
 namespace PaymentService.Controllers;
@@ -25,7 +26,7 @@ public class PaymentController : ControllerBase
         }
         var paymentResult =
             await _paymentService.ProcessPaymentAsync(orderId, paymentDto.Amount,
-                MapPaymentMethod(paymentDto.PaymentMethod));
+                paymentDto.PaymentMethod.MapPaymentMethod());
 
         if (paymentResult == null)
         {
@@ -40,16 +41,5 @@ public class PaymentController : ControllerBase
         var paymentStatus = await _paymentService.GetPaymentStatusAsync(orderId);
 
         return Ok(paymentStatus);
-    }
-    
-    private static PaymentMethod MapPaymentMethod(string paymentMethod)
-    {
-        return paymentMethod switch
-        {
-            "credit" => PaymentMethod.CreditCard,
-            "debit" => PaymentMethod.DebitCard,
-            "cash" => PaymentMethod.CashOnDelivery,
-            _ => throw new NotSupportedException("Unsupported payment method.")
-        };
     }
 }
