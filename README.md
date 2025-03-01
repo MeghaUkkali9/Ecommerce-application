@@ -1,17 +1,20 @@
 ## To work with RabbitMQ:
 1. Install Required Packages: In each service that interacts with RabbitMQ 
-    <PackageReference Include="MassTransit.AspNetCore" Version="7.3.1" />
+  ```  <PackageReference Include="MassTransit.AspNetCore" Version="7.3.1" />
     <PackageReference Include="MassTransit.RabbitMQ" Version="8.3.6" />
-    
+
+ ```
 2. Define Configuration in appsettings.json
-    "ServiceSetting": {
+   ``` "ServiceSetting": {
         "ServiceName": "order"
       },
       "RabbitMqSetting":{
         "Host": "localhost"
       }
+   ```
       
 3. Configure RabbitMQ in Program.cs
+   ```
         public static IServiceCollection AddRabbitMqWithMassTransit(this IServiceCollection service)
             {
                 service.AddMassTransit(configure =>
@@ -39,16 +42,20 @@
                
                 return service;
             }
+   ```
 
 4. Publishing Messages (Producer): Use IPublishEndpoint to send messages to an exchange:
+ ```
     await _publishEndpoint.Publish(new OrderCreated
     {
         OrderId = order.Id,
         OrderPrice = order.TotalAmount,
         PaymentMethod = order.PaymentMethod
     });
+```
     
 5. Subscribing to Messages (Consumer):Implement IConsumer<T> in your subscriber service:
+   ```
     public class OrderCreatedConsumer : IConsumer<OrderCreated>
     {
         private readonly IPaymentService _paymentService;
@@ -67,6 +74,7 @@
                 message.PaymentMethod.MapPaymentMethod());
         }
     }
+   ```
     Note: This consumer automatically subscribes to OrderCreated messages without extra configuration 
             because AddConsumers(Assembly.GetEntryAssembly()) registers it.
             
@@ -122,20 +130,20 @@ Steps to Locally Publish and Use a NuGet Package
 
 1. Pack the Library as a NuGet Package
     Run the following command in the MongoDbSharedLibrary project folder from where you see .csproj file:
-        => **********-MacBook-Air MongoDbSharedLibrary % 
-        => dotnet pack --output ../../local-nuget-package
+       ``` => **********-MacBook-Air MongoDbSharedLibrary % 
+        => dotnet pack --output ../../local-nuget-package```
         (This will create a .nupkg file inside the local-nuget-package directory.)
 2. Add the Local NuGet Source
     In the project where you want to use the library, run:
-        => dotnet nuget add source ./local-nuget-package --name LocalNuGet
+       ``` => dotnet nuget add source ./local-nuget-package --name LocalNuGet```
         (This tells .NET to look for NuGet packages in the local-nuget-package directory.)
 3. Install the NuGet Package Locally
     In the project where you want to use it, add the package:
-        => dotnet add package MongoDbSharedLibrary --source LocalNuGet
-         dotnet add package MongoDbSharedLibrary --source ../../local-nuget-package --version 1.0.1
+       ``` => dotnet add package MongoDbSharedLibrary --source LocalNuGet
+         dotnet add package MongoDbSharedLibrary --source ../../local-nuget-package --version 1.0.1```
 4. Verify Installation
     You can check if the package is installed by running:
-        => dotnet list package
+      ```  => dotnet list package```
         
 Now, you can use your MongoDbSharedLibrary like any other NuGet package without publishing it to NuGet.org.
 
