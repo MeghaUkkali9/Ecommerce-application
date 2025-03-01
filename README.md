@@ -73,6 +73,48 @@
 6. Ensure Both Services are Connected to RabbitMQ:
     Both publishers and subscribers need to register with RabbitMQ using AddRabbitMqWithMassTransit().
 
+## Docker
+This project uses Docker Compose to run MySQL, RabbitMQ, and MongoDB as containers. MySQL is used for storing relational data, RabbitMQ handles messaging between services, and MongoDB is used for NoSQL storage. Volumes are added to keep data safe even if the containers restart.
+```
+services:
+  mysql:
+    image: mysql:8.0
+    container_name: mysql
+    restart: always
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_ROOT_PASSWORD: <user_password>
+    volumes:
+      - mysql_data:/var/lib/mysql
+      - ./init-scripts:/docker-entrypoint-initdb.d 
+
+  rabbitmq:
+    image: rabbitmq:management
+    container_name: rabbitmq
+    ports:
+      - 5672:5672
+      - 15672:15672
+    volumes:
+      - rabbitmqdata:/var/lib/rabbitmq
+    hostname: rabbitmq
+  
+  mongo:
+    image: mongo
+    container_name: mongo
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodata:/data/db
+        
+volumes:
+  mysql_data:
+  rabbitmqdata:
+  mongodata:
+
+```
+
+
 ## Publishing locally and using the NuGet package in our project without pushing it 
 to a remote NuGet repository.
 
@@ -96,4 +138,6 @@ Steps to Locally Publish and Use a NuGet Package
         => dotnet list package
         
 Now, you can use your MongoDbSharedLibrary like any other NuGet package without publishing it to NuGet.org.
+
+
     
