@@ -13,7 +13,7 @@ services:
     ports:
       - "3307:3306"  
     environment:
-      MYSQL_ROOT_PASSWORD: Kriya@2170
+      MYSQL_ROOT_PASSWORD: <password>
       MYSQL_DATABASE: ecomcustomerdb
     volumes:
       - mysql_data:/var/lib/mysql
