@@ -20,7 +20,6 @@ public class OrderMapper : IOrderMapper
             TotalAmount = order.TotalAmount,
             OrderStatus = order.OrderStatus,
             OrderDate = order.OrderDate,
-            PaymentStatus = order.PaymentStatus,
             ShippingAddress = order.ShippingAddress,
             ShippingDate = order.ShippingDate
         };
@@ -34,7 +33,6 @@ public class OrderMapper : IOrderMapper
             CustomerId = orderDto.CustomerId,
             OrderStatus = orderDto.OrderStatus.ToString(),
             OrderDate = orderDto.OrderDate,
-            PaymentStatus = orderDto.PaymentStatus.ToString(),
             ShippingAddress = orderDto.ShippingAddress,
             ShippingDate = orderDto.ShippingDate
         };

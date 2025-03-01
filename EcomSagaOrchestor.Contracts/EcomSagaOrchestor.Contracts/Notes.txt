@@ -1,0 +1,2 @@
+1. <Version>1.0.5</Version>
+2. dotnet pack --output ../../local-nuget-package

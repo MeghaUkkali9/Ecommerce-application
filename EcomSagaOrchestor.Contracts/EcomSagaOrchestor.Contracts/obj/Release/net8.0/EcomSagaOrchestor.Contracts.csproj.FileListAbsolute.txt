@@ -1,0 +1,12 @@
+/Users/meghaukkali/RiderProjects/Ecommerce System/EcomSagaOrchestor.Contracts/EcomSagaOrchestor.Contracts/bin/Release/net8.0/EcomSagaOrchestor.Contracts.deps.json
+/Users/meghaukkali/RiderProjects/Ecommerce System/EcomSagaOrchestor.Contracts/EcomSagaOrchestor.Contracts/bin/Release/net8.0/EcomSagaOrchestor.Contracts.dll
+/Users/meghaukkali/RiderProjects/Ecommerce System/EcomSagaOrchestor.Contracts/EcomSagaOrchestor.Contracts/bin/Release/net8.0/EcomSagaOrchestor.Contracts.pdb
+/Users/meghaukkali/RiderProjects/Ecommerce System/EcomSagaOrchestor.Contracts/EcomSagaOrchestor.Contracts/obj/Release/net8.0/EcomSagaOrchestor.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+/Users/meghaukkali/RiderProjects/Ecommerce System/EcomSagaOrchestor.Contracts/EcomSagaOrchestor.Contracts/obj/Release/net8.0/EcomSagaOrchestor.Contracts.AssemblyInfoInputs.cache
+/Users/meghaukkali/RiderProjects/Ecommerce System/EcomSagaOrchestor.Contracts/EcomSagaOrchestor.Contracts/obj/Release/net8.0/EcomSagaOrchestor.Contracts.AssemblyInfo.cs
+/Users/meghaukkali/RiderProjects/Ecommerce System/EcomSagaOrchestor.Contracts/EcomSagaOrchestor.Contracts/obj/Release/net8.0/EcomSagaOrchestor.Contracts.csproj.CoreCompileInputs.cache
+/Users/meghaukkali/RiderProjects/Ecommerce System/EcomSagaOrchestor.Contracts/EcomSagaOrchestor.Contracts/obj/Release/net8.0/EcomSagaOrchestor.Contracts.sourcelink.json
+/Users/meghaukkali/RiderProjects/Ecommerce System/EcomSagaOrchestor.Contracts/EcomSagaOrchestor.Contracts/obj/Release/net8.0/EcomSagaOrchestor.Contracts.dll
+/Users/meghaukkali/RiderProjects/Ecommerce System/EcomSagaOrchestor.Contracts/EcomSagaOrchestor.Contracts/obj/Release/net8.0/refint/EcomSagaOrchestor.Contracts.dll
+/Users/meghaukkali/RiderProjects/Ecommerce System/EcomSagaOrchestor.Contracts/EcomSagaOrchestor.Contracts/obj/Release/net8.0/EcomSagaOrchestor.Contracts.pdb
+/Users/meghaukkali/RiderProjects/Ecommerce System/EcomSagaOrchestor.Contracts/EcomSagaOrchestor.Contracts/obj/Release/net8.0/ref/EcomSagaOrchestor.Contracts.dll

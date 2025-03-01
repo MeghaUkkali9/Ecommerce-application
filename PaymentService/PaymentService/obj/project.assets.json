@@ -18,6 +18,15 @@
           }
         }
       },
+      "EcomSagaOrchestor.Contracts/1.0.5": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/EcomSagaOrchestor.Contracts.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/EcomSagaOrchestor.Contracts.dll": {}
+        }
+      },
       "MassTransit/8.3.6": {
         "type": "package",
         "dependencies": {
@@ -866,6 +875,17 @@
         "lib/netstandard2.0/DnsClient.xml",
         "lib/netstandard2.1/DnsClient.dll",
         "lib/netstandard2.1/DnsClient.xml"
+      ]
+    },
+    "EcomSagaOrchestor.Contracts/1.0.5": {
+      "sha512": "vOdsTpmljsZukEK5fbbCv40oL9tvtCRy19Z8Te/MDEQFRkyPZsM9BjieU066/o4caJwA2FvHc4tXqW6eQYEgKw==",
+      "type": "package",
+      "path": "ecomsagaorchestor.contracts/1.0.5",
+      "files": [
+        ".nupkg.metadata",
+        "ecomsagaorchestor.contracts.1.0.5.nupkg.sha512",
+        "ecomsagaorchestor.contracts.nuspec",
+        "lib/net8.0/EcomSagaOrchestor.Contracts.dll"
       ]
     },
     "MassTransit/8.3.6": {
@@ -2354,6 +2374,7 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "EcomSagaOrchestor.Contracts >= 1.0.5",
       "Microsoft.EntityFrameworkCore >= 8.0.2",
       "MongoDBSharedLibrary >= 1.0.2",
       "OrderService.Contracts >= 1.0.2",
@@ -2404,6 +2425,10 @@
       "net8.0": {
         "targetAlias": "net8.0",
         "dependencies": {
+          "EcomSagaOrchestor.Contracts": {
+            "target": "Package",
+            "version": "[1.0.5, )"
+          },
           "Microsoft.EntityFrameworkCore": {
             "target": "Package",
             "version": "[8.0.2, )"

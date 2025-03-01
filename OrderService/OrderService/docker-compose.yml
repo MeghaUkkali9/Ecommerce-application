@@ -17,11 +17,20 @@ services:
     ports:
       - 5672:5672
       - 15672:15672
-    volumes:
-      - rabbitmqdata:/var/lib/rabbitmq
+    #volumes:
+    #  - rabbitmqdata:/var/lib/rabbitmq
     hostname: rabbitmq
-    
+  
+  mongo:
+    image: mongo
+    container_name: mongo
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongodata:/data/db
+        
 volumes:
   mysql_data:
-  rabbitmqdata:
+  #rabbitmqdata:
+  mongodata:
 

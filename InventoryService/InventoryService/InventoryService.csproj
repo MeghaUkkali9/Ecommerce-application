@@ -8,8 +8,9 @@
     </PropertyGroup>
 
     <ItemGroup>
+        <PackageReference Include="EcomSagaOrchestor.Contracts" Version="1.0.5" />
         <PackageReference Include="Microsoft.Extensions.Http.Polly" Version="9.0.2" />
-        <PackageReference Include="MongoDbSharedLibrary" Version="1.0.1" />
+        <PackageReference Include="MongoDbSharedLibrary" Version="1.0.2" />
         <PackageReference Include="ServiceDiscoveryLibrary" Version="1.0.1" />
         <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
     </ItemGroup>

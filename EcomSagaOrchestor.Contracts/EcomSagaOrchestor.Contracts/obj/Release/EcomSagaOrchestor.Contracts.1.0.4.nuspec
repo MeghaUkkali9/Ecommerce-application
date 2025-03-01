@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>EcomSagaOrchestor.Contracts</id>
+    <version>1.0.4</version>
+    <authors>EcomSagaOrchestor.Contracts</authors>
+    <description>Package Description</description>
+    <repository type="git" commit="d5a855a3a4b98fedfd03c5523a670bccdffb1d14" />
+    <dependencies>
+      <group targetFramework="net8.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="/Users/meghaukkali/RiderProjects/Ecommerce System/EcomSagaOrchestor.Contracts/EcomSagaOrchestor.Contracts/bin/Release/net8.0/EcomSagaOrchestor.Contracts.dll" target="lib/net8.0/EcomSagaOrchestor.Contracts.dll" />
+  </files>
+</package>

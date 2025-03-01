@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "pA4f7LwudD4=",
+  "dgSpecHash": "Q6IQAmdyiQY=",
   "success": true,
   "projectFilePath": "/Users/meghaukkali/RiderProjects/Ecommerce System/PaymentService/PaymentService/PaymentService.csproj",
   "expectedPackageFiles": [
     "/Users/meghaukkali/.nuget/packages/dnsclient/1.6.1/dnsclient.1.6.1.nupkg.sha512",
+    "/Users/meghaukkali/.nuget/packages/ecomsagaorchestor.contracts/1.0.5/ecomsagaorchestor.contracts.1.0.5.nupkg.sha512",
     "/Users/meghaukkali/.nuget/packages/masstransit/8.3.6/masstransit.8.3.6.nupkg.sha512",
     "/Users/meghaukkali/.nuget/packages/masstransit.abstractions/8.3.6/masstransit.abstractions.8.3.6.nupkg.sha512",
     "/Users/meghaukkali/.nuget/packages/masstransit.aspnetcore/7.3.1/masstransit.aspnetcore.7.3.1.nupkg.sha512",

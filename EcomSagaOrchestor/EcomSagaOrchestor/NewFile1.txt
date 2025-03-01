@@ -1,0 +1,6 @@
+MassTransit publishes the event OrderCreated to RabbitMQ.
+The event goes to the exchange: EcomSagaOrchestor.Contracts.Events.OrderEvents:OrderCreated.
+ RabbitMQ routes the event to the OrderState queue.
+The Saga Orchestrator consumes the event from the OrderState queue.
+
+ dotnet add package EcomSagaOrchestor.Contracts --source ../../local-nuget-package

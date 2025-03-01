@@ -58,3 +58,10 @@
 /Users/meghaukkali/RiderProjects/Ecommerce System/InventoryService/InventoryService/bin/Debug/net8.0/Microsoft.Extensions.Options.ConfigurationExtensions.dll
 /Users/meghaukkali/RiderProjects/Ecommerce System/InventoryService/InventoryService/bin/Debug/net8.0/Polly.Extensions.Http.dll
 /Users/meghaukkali/RiderProjects/Ecommerce System/InventoryService/InventoryService/bin/Debug/net8.0/System.Diagnostics.DiagnosticSource.dll
+/Users/meghaukkali/RiderProjects/Ecommerce System/InventoryService/InventoryService/bin/Debug/net8.0/MassTransit.dll
+/Users/meghaukkali/RiderProjects/Ecommerce System/InventoryService/InventoryService/bin/Debug/net8.0/MassTransit.Abstractions.dll
+/Users/meghaukkali/RiderProjects/Ecommerce System/InventoryService/InventoryService/bin/Debug/net8.0/MassTransit.AspNetCoreIntegration.dll
+/Users/meghaukkali/RiderProjects/Ecommerce System/InventoryService/InventoryService/bin/Debug/net8.0/MassTransit.ExtensionsDependencyInjectionIntegration.dll
+/Users/meghaukkali/RiderProjects/Ecommerce System/InventoryService/InventoryService/bin/Debug/net8.0/MassTransit.RabbitMqTransport.dll
+/Users/meghaukkali/RiderProjects/Ecommerce System/InventoryService/InventoryService/bin/Debug/net8.0/RabbitMQ.Client.dll
+/Users/meghaukkali/RiderProjects/Ecommerce System/InventoryService/InventoryService/bin/Debug/net8.0/EcomSagaOrchestor.Contracts.dll

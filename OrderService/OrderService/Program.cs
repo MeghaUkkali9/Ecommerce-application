@@ -21,6 +21,10 @@ builder.Services.AddHttpClient<IProductProxy, ProductProxy>(client => {
     var apiUrl = builder.Configuration["ProductService:Url"];
     client.BaseAddress = new Uri(apiUrl); });
 
+/*. Registers MassTransit in the DI Container: adds MassTransit to the
+    dependency injection container, allowing the application to use
+    message-based communication.*/
+
 builder.Services.AddRabbitMqWithMassTransit();
 // builder.Services.AddMassTransit(configure =>
 // {

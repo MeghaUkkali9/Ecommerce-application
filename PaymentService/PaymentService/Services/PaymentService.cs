@@ -7,7 +7,7 @@ namespace PaymentService.Services;
 
 public interface IPaymentService
 {
-    Task<PaymentDto> ProcessPaymentAsync(int orderId, decimal amount, PaymentMethod paymentMethod);
+    Task<PaymentDto> ProcessPaymentAsync(int orderId, decimal amount, PaymentMethod paymentMethod, PaymentStatus paymentStatus);
     Task<PaymentDto> GetPaymentStatusAsync(int orderId);
 }
 
@@ -24,13 +24,13 @@ public class PaymentService : IPaymentService
 
     public async Task<PaymentDto> ProcessPaymentAsync(int orderId,
         decimal amount, 
-        PaymentMethod paymentMethod)
+        PaymentMethod paymentMethod, PaymentStatus paymentStatus)
     {
         var payment = new Payment
         {
             OrderId = orderId,
             Amount = amount,
-            PaymentStatus = PaymentStatus.Successful,
+            PaymentStatus = paymentStatus,
             PaymentDate = DateTime.Now,
             PaymentMethod = paymentMethod
         };

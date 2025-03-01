@@ -6,4 +6,6 @@ public class OrderRequest
     public int Quantity { get; set; }
     public int CustomerId { get; set; }
     public string PaymentMethod { get; set; }
+    public string ShippingAddress { get; set; }
+    public DateTime ShippingDate { get; set; }
 }

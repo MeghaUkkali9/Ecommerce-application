@@ -1,3 +1,5 @@
+using EcomSagaOrchestor.Contracts.Events;
+using MassTransit;
 using OrderService.Dtos;
 using OrderService.Mappers;
 using OrderService.Proxies;
@@ -11,7 +13,8 @@ public interface IOrderService
     Task<OrderDto> CreateOrder(OrderDto createOrder);
     Task<OrderDto?> UpdateOrder(int id, OrderDto updateOrder);
     Task<bool> DeleteOrder(int id);
-    Task ProcessOrder(OrderRequest request);
+    Task<OrderDto> ProcessOrder(OrderDto orderDto, string productId, string paymentMethod, int quantity);
+    Task UpdateOrder(OrderDto order);
 }
 public class OrderService : IOrderService
 {
@@ -20,18 +23,21 @@ public class OrderService : IOrderService
     private readonly IProductProxy _productProxy;
     private readonly ICustomerProxy _customerProxy;
     private readonly IPriceCalculator _priceCalculator;
+    private readonly IPublishEndpoint _publishEndpoint;
 
     public OrderService(IOrderRepository orderRepository, 
         IOrderMapper orderMapper,
         IProductProxy productProxy,
         ICustomerProxy customerProxy, 
-        IPriceCalculator priceCalculator)
+        IPriceCalculator priceCalculator,
+        IPublishEndpoint publishEndpoint)
     {
         _orderRepository = orderRepository;
         _orderMapper = orderMapper;
         _productProxy = productProxy;
         _customerProxy = customerProxy;
         _priceCalculator = priceCalculator;
+        _publishEndpoint = publishEndpoint;
     }
 
     public async Task<OrderDto?> GetOrderById(int orderId)
@@ -52,8 +58,7 @@ public class OrderService : IOrderService
         var existingOrder = await _orderRepository.GetByIdAsync(orderId); 
         if (existingOrder == null) return null;
 
-        existingOrder.OrderStatus = updateOrderRequest.OrderStatus.ToString();
-        existingOrder.PaymentStatus = updateOrderRequest.PaymentStatus.ToString();
+        existingOrder.OrderStatus = updateOrderRequest.OrderStatus;
         existingOrder.ShippingAddress = updateOrderRequest.ShippingAddress;
         existingOrder.ShippingDate = updateOrderRequest.ShippingDate;
 
@@ -66,18 +71,30 @@ public class OrderService : IOrderService
         return await _orderRepository.DeleteAsync(orderId); 
     }
 
-    public async Task ProcessOrder(OrderRequest request)
+    public async Task<OrderDto> ProcessOrder(OrderDto request, string productId, string paymentMethod, int quantity)
     {
-        var isCustomerRegistered = await _customerProxy.IsCustomerRegistered(request.CustomerId);
-        if (!isCustomerRegistered)
-        {
-            throw new ArgumentException("Customer must be registered");
-        }
+        // var isCustomerRegistered = await _customerProxy.IsCustomerRegistered(request.CustomerId);
+        // if (!isCustomerRegistered)
+        // {
+        //     throw new ArgumentException("Customer must be registered");
+        // }
 
-        var product = await _productProxy.GetProductById(request.ProductId);
-        var totalPrice = _priceCalculator.CalculatePrice(request.Quantity, product.Price);
+        var product = await _productProxy.GetProductById(productId);
+        var totalPrice = _priceCalculator.CalculatePrice(quantity, product.Price);
         
+        var order = await CreateOrder(request);
+        var correlationId = Guid.NewGuid();
         
-        //if payment is successful then only order is placed.
+        await _publishEndpoint.Publish(new OrderEvents.OrderCreated(correlationId,
+            order.OrderId,
+            product.Id, totalPrice, paymentMethod, quantity));
+        return order;
+    }
+
+    public async Task UpdateOrder(OrderDto orderDto)
+    {
+        var existingOrder = await _orderRepository.GetByIdAsync(orderDto.OrderId);
+        existingOrder.OrderStatus = orderDto.OrderStatus;
+        await _orderRepository.UpdateAsync(existingOrder); 
     }
 }

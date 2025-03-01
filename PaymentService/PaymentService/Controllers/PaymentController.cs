@@ -24,9 +24,12 @@ public class PaymentController : ControllerBase
         {
             return BadRequest("Invalid payment data.");
         }
+
+        var paymentGatewayResponse = PaymentStatus.Successful;
+        
         var paymentResult =
             await _paymentService.ProcessPaymentAsync(orderId, paymentDto.Amount,
-                paymentDto.PaymentMethod.MapPaymentMethod());
+                paymentDto.PaymentMethod.MapPaymentMethod(), paymentGatewayResponse);
 
         if (paymentResult == null)
         {
@@ -36,10 +39,10 @@ public class PaymentController : ControllerBase
     }
 
     [HttpGet("status/{orderId}")]
-    public async Task<IActionResult> GetPaymentStatus(int orderId)
+    public async Task<ActionResult<PaymentDto>> GetPaymentStatus(int orderId)
     {
-        var paymentStatus = await _paymentService.GetPaymentStatusAsync(orderId);
+        var paymentDto = await _paymentService.GetPaymentStatusAsync(orderId);
 
-        return Ok(paymentStatus);
+        return Ok(paymentDto);
     }
 }

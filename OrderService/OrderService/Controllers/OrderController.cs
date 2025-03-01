@@ -1,4 +1,3 @@
-using MassTransit;
 using Microsoft.AspNetCore.Mvc;
 using OrderService.Dtos;
 using OrderService.Services;
@@ -10,12 +9,10 @@ namespace OrderService.Controllers
     public class OrderController : ControllerBase
     {
         private readonly IOrderService _orderService;
-        private readonly IPublishEndpoint _publishEndpoint;
         
-        public OrderController(IOrderService orderService, IPublishEndpoint publishEndpoint)
+        public OrderController(IOrderService orderService)
         {
             _orderService = orderService;
-            _publishEndpoint = publishEndpoint;
         }
 
         [HttpGet("{id}")]
@@ -47,15 +44,11 @@ namespace OrderService.Controllers
                 CustomerId = createOrder.CustomerId,
                 OrderStatus = "Pending",
                 OrderDate = DateTime.UtcNow,
-                PaymentStatus = "Pending",
                 ShippingAddress = createOrder.ShippingAddress,
                 ShippingDate = createOrder.ShippingDate
             };
 
             var createdOrder = await _orderService.CreateOrder(orderDto);
-            _publishEndpoint.Publish(new Contracts.Contracts.OrderCreated
-            (createdOrder.OrderId,
-                createdOrder.TotalAmount, "cash"));
             
             return CreatedAtAction(nameof(GetOrder),
                 new { id = createdOrder.OrderId }, createdOrder);
@@ -64,27 +57,23 @@ namespace OrderService.Controllers
         [HttpPost("placeorder")]
         [ProducesResponseType(StatusCodes.Status201Created)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public async Task<ActionResult<OrderDto>> PlaceOrder([FromBody] OrderRequest request)
+        public async Task<ActionResult> PlaceOrder([FromBody] OrderRequest request)
         {
             if (!ModelState.IsValid)
             {
                 return BadRequest(ModelState);
             }
-
-            // Make sure customer id exists in the ecomcustomerdb.
-            // Validate that the customer exists (for this, you would need to call the customer service or repository)
-            await _orderService.ProcessOrder(request);
             var orderDto = new OrderDto()
             {
                 CustomerId = request.CustomerId,
                 OrderStatus = "Pending",
                 OrderDate = DateTime.UtcNow,
-                PaymentStatus = "Pending"
+                ShippingAddress = request.ShippingAddress,
+                ShippingDate = request.ShippingDate
             };
-
-            var createdOrder = await _orderService.CreateOrder(orderDto);
-            return CreatedAtAction(nameof(GetOrder),
-                new { id = createdOrder.OrderId }, createdOrder);
+            var order = await _orderService.ProcessOrder(orderDto, request.ProductId, request.PaymentMethod, request.Quantity);
+            
+            return Accepted(new { OrderId = order.OrderId, Message = "Processing the order." });
         }
 
         [HttpPut("{id}")]
@@ -98,7 +87,6 @@ namespace OrderService.Controllers
                 CustomerId = updateOrderRequest.CustomerId,
                 OrderStatus = "Pending",
                 OrderDate = DateTime.UtcNow,
-                PaymentStatus = "Pending",
                 ShippingAddress = updateOrderRequest.ShippingAddress,
                 ShippingDate = updateOrderRequest.ShippingDate
             };

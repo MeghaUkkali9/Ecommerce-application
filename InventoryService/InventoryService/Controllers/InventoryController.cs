@@ -1,10 +1,9 @@
-using InventoryService.Data;
 using InventoryService.Dtos;
 using InventoryService.Extensions;
 using InventoryService.Proxies;
+using InventoryService.Services;
 using Microsoft.AspNetCore.Mvc;
 using MongoDB.Bson;
-using MongoDbSharedLibrary;
 
 namespace InventoryService.Controllers;
 
@@ -12,40 +11,41 @@ namespace InventoryService.Controllers;
 [Route("[controller]")]
 public class InventoryController : ControllerBase
 {
-    private readonly IRepository<Inventory> _repository;
+    private readonly IInventoryService _inventoryService;
     private readonly IProductProxy _productProxy;
 
-    public InventoryController(IRepository<Inventory> repository, 
-        IProductProxy productProxy)
+    public InventoryController(
+        IProductProxy productProxy,
+        IInventoryService inventoryService)
     {
-        _repository = repository;
         _productProxy = productProxy;
+        _inventoryService = inventoryService;
     }
 
     [HttpGet]
     public async Task<ActionResult<IEnumerable<InventoryDto>>> GetAll()
     {
-        var inventory =  (await _repository.GetAllAsync()).Select(x=> x.ToDto());
-        return Ok(inventory);
+        var inventory = await _inventoryService.GetAll();
+        return Ok(inventory.Select(x => x.ToDto()));
     }
 
     [HttpGet("{productId}")]
     public async Task<ActionResult<ProductInventory>> GetByProductId(string productId)
     {
-        var inventory = (await _repository.GetByIdAsync(x => x.ProductId == new ObjectId(productId)))
-            .ToDto();
+        var inventory = (await _inventoryService.Get(productId)).ToDto();
 
         if (inventory == null)
         {
             return NotFound();
         }
+
         var productDto = await _productProxy.GetProductById(inventory.ProductId);
 
         if (productDto == null)
         {
             return NotFound();
         }
-        
+
         var productInventory = new ProductInventory()
         {
             Id = inventory.Id,
@@ -56,55 +56,33 @@ public class InventoryController : ControllerBase
             CategoryId = productDto.CategoryId,
             Quantity = inventory.Quantity,
         };
-        
+
         return Ok(productInventory);
     }
 
     [HttpPost]
     public async Task<ActionResult> UpsertInventory([FromBody] UpsertInventoryDto inventory)
     {
-        if (!ObjectId.TryParse(inventory.ProductId, out ObjectId productObjectId))
+        if (!ObjectId.TryParse(inventory.ProductId, out var productObjectId))
         {
             return BadRequest("Invalid Product ID format.");
         }
 
-        var existingInventory = await _repository.GetByIdAsync(x => x.ProductId == productObjectId);
+        var productInventory = (await _inventoryService.Upsert(productObjectId, inventory)).ToDto();
 
-        if (existingInventory is not null)
-        {
-            existingInventory.Quantity += inventory.Quantity;
-            await _repository.UpdateAsync(existingInventory);
-            return Ok(existingInventory);
-        }
-
-        var newInventory = new Inventory()
-        {
-            ProductId = new ObjectId(inventory.ProductId),
-            Quantity = inventory.Quantity
-        };
-        await _repository.CreateAsync(newInventory);
-
-        return CreatedAtAction(nameof(GetByProductId), new { productId = newInventory.ProductId }, newInventory);
+        return CreatedAtAction(nameof(GetByProductId),
+            new { productId = productInventory.ProductId }, productInventory);
     }
 
     [HttpPut("{productId}")]
     public async Task<ActionResult> UpdateInventory(string productId, [FromBody] UpdateInventoryDto inventory)
     {
-        if (!ObjectId.TryParse(productId, out ObjectId productObjectId))
+        if (!ObjectId.TryParse(productId, out var productObjectId))
         {
             return BadRequest("Invalid Product ID format.");
         }
 
-        var existingInventory = await _repository.GetByIdAsync(x => x.ProductId == productObjectId);
-
-        if (existingInventory == null)
-        {
-            return NotFound("Inventory item not found.");
-        }
-
-        existingInventory.Quantity = inventory.Quantity;
-        await _repository.UpdateAsync(existingInventory);
-
-        return Ok(existingInventory);
+        await _inventoryService.Update(productObjectId, inventory.Quantity);
+        return Ok();
     }
 }

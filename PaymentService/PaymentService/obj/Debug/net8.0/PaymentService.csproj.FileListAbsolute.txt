@@ -92,3 +92,4 @@
 /Users/meghaukkali/RiderProjects/Ecommerce System/PaymentService/PaymentService/bin/Debug/net8.0/SharpCompress.dll
 /Users/meghaukkali/RiderProjects/Ecommerce System/PaymentService/PaymentService/bin/Debug/net8.0/Snappier.dll
 /Users/meghaukkali/RiderProjects/Ecommerce System/PaymentService/PaymentService/bin/Debug/net8.0/ZstdSharp.dll
+/Users/meghaukkali/RiderProjects/Ecommerce System/PaymentService/PaymentService/bin/Debug/net8.0/EcomSagaOrchestor.Contracts.dll

@@ -16,6 +16,6 @@ public static class IocConfiguration
         services.AddScoped<IOrderService, Services.OrderService>();
         services.AddScoped<IOrderRepository, OrderRepository>();
         services.AddScoped<IOrderMapper, OrderMapper>();
-        services.AddScoped<IPriceCalculator, PriceCalculator>();
+        services.AddTransient<IPriceCalculator, PriceCalculator>();
     }
 }

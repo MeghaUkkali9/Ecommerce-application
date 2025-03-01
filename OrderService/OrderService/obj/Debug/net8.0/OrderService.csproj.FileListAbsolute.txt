@@ -100,3 +100,4 @@
 /Users/meghaukkali/RiderProjects/Ecommerce System/OrderService/OrderService/bin/Debug/net8.0/ZstdSharp.dll
 /Users/meghaukkali/RiderProjects/Ecommerce System/OrderService/OrderService/bin/Debug/net8.0/OrderService.Contracts.dll
 /Users/meghaukkali/RiderProjects/Ecommerce System/OrderService/OrderService/bin/Debug/net8.0/OrderService.Contracts.pdb
+/Users/meghaukkali/RiderProjects/Ecommerce System/OrderService/OrderService/bin/Debug/net8.0/EcomSagaOrchestor.Contracts.dll

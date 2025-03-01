@@ -18,6 +18,15 @@
           }
         }
       },
+      "EcomSagaOrchestor.Contracts/1.0.5": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/EcomSagaOrchestor.Contracts.dll": {}
+        },
+        "runtime": {
+          "lib/net8.0/EcomSagaOrchestor.Contracts.dll": {}
+        }
+      },
       "FluentValidation/11.5.1": {
         "type": "package",
         "compile": {
@@ -930,6 +939,17 @@
         "lib/netstandard2.0/DnsClient.xml",
         "lib/netstandard2.1/DnsClient.dll",
         "lib/netstandard2.1/DnsClient.xml"
+      ]
+    },
+    "EcomSagaOrchestor.Contracts/1.0.5": {
+      "sha512": "vOdsTpmljsZukEK5fbbCv40oL9tvtCRy19Z8Te/MDEQFRkyPZsM9BjieU066/o4caJwA2FvHc4tXqW6eQYEgKw==",
+      "type": "package",
+      "path": "ecomsagaorchestor.contracts/1.0.5",
+      "files": [
+        ".nupkg.metadata",
+        "ecomsagaorchestor.contracts.1.0.5.nupkg.sha512",
+        "ecomsagaorchestor.contracts.nuspec",
+        "lib/net8.0/EcomSagaOrchestor.Contracts.dll"
       ]
     },
     "FluentValidation/11.5.1": {
@@ -2501,6 +2521,7 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "EcomSagaOrchestor.Contracts >= 1.0.5",
       "FluentValidation.AspNetCore >= 11.3.0",
       "MassTransit.AspNetCore >= 7.3.1",
       "MassTransit.RabbitMQ >= 8.3.6",
@@ -2559,6 +2580,10 @@
       "net8.0": {
         "targetAlias": "net8.0",
         "dependencies": {
+          "EcomSagaOrchestor.Contracts": {
+            "target": "Package",
+            "version": "[1.0.5, )"
+          },
           "FluentValidation.AspNetCore": {
             "target": "Package",
             "version": "[11.3.0, )"

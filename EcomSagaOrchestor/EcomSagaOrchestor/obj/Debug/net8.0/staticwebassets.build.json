@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "aP0kCl462JwkGr2oDVbkcBDUphWAlc5kfNIR603ja/M=",
+  "Source": "EcomSagaOrchestor",
+  "BasePath": "_content/EcomSagaOrchestor",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

@@ -12,6 +12,10 @@ public static class Extensions
     {
         service.AddMassTransit(configure =>
         {
+            /*
+             * This scans the current executing assembly for any classes that
+             * implement IConsumer<T> and automatically registers them.
+             */
             configure.AddConsumers(Assembly.GetEntryAssembly());
             
             configure.UsingRabbitMq((context, configurator) =>
@@ -20,7 +24,9 @@ public static class Extensions
                     var serviceSetting = configuration.GetSection(nameof(ServiceSetting)).Get<ServiceSetting>();
                     var rabbitMqSetting = configuration.GetSection(nameof(RabbitMqSetting)).Get<RabbitMqSetting>();
                     
-                    configurator.Host(rabbitMqSetting.Host);
+                    configurator.Host(rabbitMqSetting.Host); //This line tells MassTransit where RabbitMQ is running
+                    
+                    //This sets up queues and exchanges using a kebab-case naming strategy.
                     configurator.ConfigureEndpoints(context,
                         new KebabCaseEndpointNameFormatter(serviceSetting.ServiceName, false));
                 }

@@ -1,10 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "iyINkrU4ktw=",
+  "dgSpecHash": "CpxhQ4ccdzM=",
   "success": true,
   "projectFilePath": "/Users/meghaukkali/RiderProjects/Ecommerce System/OrderService/OrderService/OrderService.csproj",
   "expectedPackageFiles": [
     "/Users/meghaukkali/.nuget/packages/dnsclient/1.6.1/dnsclient.1.6.1.nupkg.sha512",
+    "/Users/meghaukkali/.nuget/packages/ecomsagaorchestor.contracts/1.0.5/ecomsagaorchestor.contracts.1.0.5.nupkg.sha512",
     "/Users/meghaukkali/.nuget/packages/fluentvalidation/11.5.1/fluentvalidation.11.5.1.nupkg.sha512",
     "/Users/meghaukkali/.nuget/packages/fluentvalidation.aspnetcore/11.3.0/fluentvalidation.aspnetcore.11.3.0.nupkg.sha512",
     "/Users/meghaukkali/.nuget/packages/fluentvalidation.dependencyinjectionextensions/11.5.1/fluentvalidation.dependencyinjectionextensions.11.5.1.nupkg.sha512",
