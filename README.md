@@ -1,6 +1,7 @@
 ## To work with RabbitMQ:
 1. Install Required Packages: In each service that interacts with RabbitMQ 
-  ```  <PackageReference Include="MassTransit.AspNetCore" Version="7.3.1" />
+  ```
+    <PackageReference Include="MassTransit.AspNetCore" Version="7.3.1" />
     <PackageReference Include="MassTransit.RabbitMQ" Version="8.3.6" />
 
  ```
