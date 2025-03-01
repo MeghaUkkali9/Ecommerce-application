@@ -27,7 +27,7 @@ public class RestoreStockConsumer : IConsumer<StockCommands.RestoreStock>
             stock.Quantity += context.Message.Quantity;
             await _inventoryService.Update(new ObjectId(productId), stock.Quantity);
 
-            Console.WriteLine($"AfterStock reserved for Order {orderId}: {stock.Quantity}");
+            Console.WriteLine($"After Stock reserved for Order {orderId}: {stock.Quantity}");
         }
     }
 }

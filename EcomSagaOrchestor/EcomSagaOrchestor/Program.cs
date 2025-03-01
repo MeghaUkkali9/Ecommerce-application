@@ -9,7 +9,7 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddMassTransit(x =>
 {
-    x.AddSagaStateMachine<OrderSaga, OrderState>().InMemoryRepository(); 
+    x.AddSagaStateMachine<OrderSagaOrchestrator, OrderSagaState>().InMemoryRepository(); 
     
     x.UsingRabbitMq((context, cfg) =>
     {

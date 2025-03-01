@@ -4,7 +4,7 @@ using MassTransit;
 
 namespace EcomSagaOrchestor;
 
-public class OrderSaga : MassTransitStateMachine<OrderState>
+public class OrderSagaOrchestrator : MassTransitStateMachine<OrderSagaState>
 {
     public State OrderCreated { get; private set; }
     public State StockReserved { get; private set; }
@@ -18,7 +18,7 @@ public class OrderSaga : MassTransitStateMachine<OrderState>
     public Event<PaymentEvents.PaymentFailed> PaymentFailedEvent { get; private set; }
     public Event<OrderEvents.OrderCancelled> OrderCancelledEvent { get; private set; }
 
-    public OrderSaga()
+    public OrderSagaOrchestrator()
     {
         InstanceState(x => x.CurrentState);
         
@@ -73,7 +73,7 @@ public class OrderSaga : MassTransitStateMachine<OrderState>
                 .TransitionTo(OrderCreated)
         );
 
-        //StockReserved -> Proceed to Payment
+        //StockReserved -> proceed with payment
          During(OrderCreated,
              When(StockReservedEvent)
                  .Then(context =>
@@ -90,7 +90,7 @@ public class OrderSaga : MassTransitStateMachine<OrderState>
                  .TransitionTo(StockReserved)
          );
         
-        //StockNotAvailable -> Cancel Order
+        //StockNotAvailable -> cancel order
         During(OrderCreated,
             When(StockNotAvailableEvent)
                 .Then(context =>
@@ -101,14 +101,14 @@ public class OrderSaga : MassTransitStateMachine<OrderState>
                 .TransitionTo(OrderCancelled)
         );
         
-        // //PaymentSuccess -> Complete Order
+        // //PaymentSuccess -> complete order
         During(StockReserved,
             When(PaymentProcessedEvent)
                 .TransitionTo(PaymentProcessed)
                 .Publish(context => new OrderCommands.CompleteOrder(context.Saga.CorrelationId, context.Saga.OrderId))
         );
         
-        //PaymentFailure -> Cancel Order & Restore Stock
+        //PaymentFailure -> cancel order & restore stock
         During(StockReserved,
             When(PaymentFailedEvent)
                 .TransitionTo(OrderCancelled)
@@ -125,7 +125,7 @@ public class OrderSaga : MassTransitStateMachine<OrderState>
                 .Publish(context => new OrderCommands.CancelOrder(context.Saga.CorrelationId, context.Saga.OrderId)) 
         );
         
-        //Handle Order Cancellation in Any State
+        //Handle order cancellation in any state
         DuringAny(
             When(OrderCancelledEvent)
                 .TransitionTo(OrderCancelled)

@@ -2,7 +2,7 @@ using MassTransit;
 
 namespace EcomSagaOrchestor;
 
-public class OrderState: SagaStateMachineInstance
+public class OrderSagaState: SagaStateMachineInstance
 {
     public Guid CorrelationId { get; set; }  
     public State CurrentState { get; set; } 
